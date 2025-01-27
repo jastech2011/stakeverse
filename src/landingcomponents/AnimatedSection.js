@@ -6,7 +6,8 @@ export const AnimatedSection = ({ getStyles, children }) => {
   const isInViewport = useIsInViewport(elementRef);
 
   return (
-    <section style={getStyles(isInViewport)}>
+    // <section style={getStyles(isInViewport)}> //TODO: uncomment this line to use the animation
+    <section>
       <div className="rectangle" ref={elementRef}>
         {children}
       </div>
